@@ -1,0 +1,4 @@
+name = "MeshInterface"
+uuid = "0251a1e7-c7d6-4eb8-b669-a671f3825d55"
+authors = ["Petr Krysl <pkrysl@ucsd.edu>"]
+version = "0.1.0"
