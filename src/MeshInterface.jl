@@ -1,9 +1,25 @@
 module MeshInterface
 
+"""
+    NoSuchTrait
+
+Type corresponding to "no such trait" in dispatch.  
+"""
 struct NoSuchTrait end
 
+"""
+    FESetTrait
+
+Trait of finite element sets.  
+"""
 abstract type FESetTrait end
 fesettrait(a) = NoSuchTrait()
+
+"""
+    FEMeshTrait
+
+Trait of finite element meshes.  
+"""
 abstract type FEMeshTrait end
 femeshtrait(a) = NoSuchTrait()
 
