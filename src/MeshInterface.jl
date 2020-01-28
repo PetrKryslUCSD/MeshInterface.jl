@@ -2,9 +2,9 @@ module MeshInterface
 
 struct NoSuchTrait end
 
-struct FESetTrait end
+abstract type FESetTrait end
 fesettrait(a) = NoSuchTrait()
-struct FEMeshTrait end
+abstract type FEMeshTrait end
 femeshtrait(a) = NoSuchTrait()
 
 numberofsets(x::T) where T = _numberofsets(femeshtrait(T), x)
